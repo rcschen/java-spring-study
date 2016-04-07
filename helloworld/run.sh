@@ -1,0 +1,3 @@
+java -cp .:target/helloworld-1.0-SNAPSHOT.jar:../spring-lib/spring-framework-4.0.6.RELEASE/libs/spring-core-4.0.6.RELEASE.jar:../spring-lib/spring-framework-4.0.6.RELEASE/libs/spring-framework-bom-4.0.6.RELEASE.jar:../spring-lib/spring-framework-4.0.6.RELEASE/libs/spring-context-4.0.6.RELEASE.jar:../spring-lib/spring-framework-4.0.6.RELEASE/libs/spring-beans-4.0.6.RELEASE.jar:../spring-lib/commons-logging-1.2/commons-logging-1.2.jar:../spring-lib/spring-framework-4.0.6.RELEASE/libs/spring-expression-4.0.6.RELEASE.jar com.example.spring.MainApp
+echo '======='
+mvn exec:java -Dexec.mainClass=com.example.spring.MainApp 

@@ -1,0 +1,3 @@
+#create
+mvn archetype:generate -DarchetypeArtifactId=maven-archetype-quickstart -DinteractiveMode=false -DgroupId=com.example.ioc.beanfactory -DartifactId=ioc_xml_bean_factory
+
