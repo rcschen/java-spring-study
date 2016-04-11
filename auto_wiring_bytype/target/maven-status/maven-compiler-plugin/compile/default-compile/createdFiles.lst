@@ -1,0 +1,4 @@
+com/example/autowiring/bytype/SpellChecker.class
+com/example/autowiring/bytype/App.class
+com/example/autowiring/bytype/TextEditor.class
+com/example/autowiring/bytype/MainApp.class
