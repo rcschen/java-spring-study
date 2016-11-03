@@ -1,5 +1,5 @@
 
-- HelloWorld.java (afterPropertiesSet())
+- HelloWorld.java ( implement org.springframework.beans.factory.InitializingBean, afterPropertiesSet())
 
 ```
 package com.example.lifecycle.InitializingBean;
