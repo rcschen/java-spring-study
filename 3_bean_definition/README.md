@@ -20,7 +20,8 @@
  2. Annotation-based configuration
  3. Java-based configuration
  
- - example
+
+- example
  
  ```
  <?xml version="1.0" encoding="UTF-8"?>
