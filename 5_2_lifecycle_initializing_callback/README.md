@@ -1,4 +1,4 @@
-- HelloWorld.java
+- HelloWorld.java (init(), destroy())
 
 ```
 public class HelloWorld {
@@ -21,7 +21,27 @@ public class HelloWorld {
 }
 ```
 
-- Beans.xml
+- MainApp.java (context.registerShutdownHook();)
+
+```
+import org.springframework.context.support.AbstractApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainApp {
+   public static void main(String[] args) {
+      //ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
+      AbstractApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
+
+      HelloWorld objA = (HelloWorld) context.getBean("helloWorld");
+
+      objA.setMessage("I'm object A");
+      objA.getMessage();
+      context.registerShutdownHook();
+
+   }
+}
+```
+- Beans.xml ( init-method="init" destroy-method="destroy")
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
