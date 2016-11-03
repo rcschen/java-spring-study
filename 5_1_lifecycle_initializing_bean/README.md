@@ -1,5 +1,5 @@
 
-- HelloWorld.java
+- HelloWorld.java (afterPropertiesSet())
 
 ```
 package com.example.lifecycle.InitializingBean;
@@ -21,6 +21,27 @@ public class HelloWorld implements InitializingBean {
       System.out.println("Your Message : " + message);
    }
 }
+```
+
+- MainApp.java
+```
+package com.example.lifecycle.InitializingBean;
+
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
+public class MainApp {
+   public static void main(String[] args) {
+      ApplicationContext context = new ClassPathXmlApplicationContext("Beans.xml");
+
+      HelloWorld objA = (HelloWorld) context.getBean("helloWorld");
+
+      objA.setMessage("I'm object A");
+      objA.getMessage();
+   }
+}
+
+
 ```
 
 - Beans.xml
