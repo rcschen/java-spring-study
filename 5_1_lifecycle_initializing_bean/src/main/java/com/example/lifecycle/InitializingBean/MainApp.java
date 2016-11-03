@@ -1,4 +1,4 @@
-package com.example.lifecycle.initializingbean;
+package com.example.lifecycle.InitializingBean;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

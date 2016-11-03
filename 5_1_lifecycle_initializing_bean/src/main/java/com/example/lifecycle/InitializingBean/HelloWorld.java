@@ -1,4 +1,4 @@
-package com.example.lifecycle.initializingbean;
+package com.example.lifecycle.InitializingBean;
 
 import org.springframework.beans.factory.InitializingBean;
 
